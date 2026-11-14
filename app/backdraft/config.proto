@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package xray.app.backdraft;
+option csharp_namespace = "Xray.App.Backdraft";
+option go_package = "github.com/xtls/xray-core/app/backdraft";
+option java_package = "com.xray.app.backdraft";
+option java_multiple_files = true;
+
+message Config {
+  string target = 1;
+  string destination = 2;
+  string path = 3;
+  string object_size = 4;
+  string close_window = 5;
+  string abort = 6;
+  int64 read_bytes = 7;
+  int64 rate = 8;
+  int64 jitter = 9;
+  int64 concurrency = 10;
+  string warmup = 11;
+  string outbound = 12;
+}

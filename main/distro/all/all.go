@@ -18,6 +18,7 @@ import (
 	_ "github.com/xtls/xray-core/app/observatory/command"
 
 	// Other optional features.
+	_ "github.com/xtls/xray-core/app/backdraft"
 	_ "github.com/xtls/xray-core/app/dns"
 	_ "github.com/xtls/xray-core/app/dns/fakedns"
 	_ "github.com/xtls/xray-core/app/geodata"
